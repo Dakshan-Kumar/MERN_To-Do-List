@@ -6,7 +6,7 @@ const schema = mongoose.Schema(
         {
             description:{
                 type : String,
-                require : true,
+                required : true,
                 trim : true,
             },
             completed :{
@@ -19,4 +19,4 @@ const schema = mongoose.Schema(
     
 )
 
-module.exports = mongoose ("Todo", schema);
+module.exports = mongoose.model("Todo", schema);
